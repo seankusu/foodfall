@@ -4,6 +4,9 @@ Food Fall Open Hack
 
 The main project code is "foodFall.py"
 
+Description:
+    The goal of this game is to use a mouth and catch as many sushi pices
+
 Member IDs:
 - miakusu
 - M900-Pop
@@ -12,3 +15,4 @@ Member IDs:
 
 NOTE:
 - The other two files are before the team members merged the project.
+- Image of the sushi from free image site: https://www.cleanpng.com/free/cartoon-sushi.html 

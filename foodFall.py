@@ -15,6 +15,7 @@ def dropSushi(x,speed):
     
     y = 0
     while y <= 440:
+        pygame.time.delay(10)
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 quit()
