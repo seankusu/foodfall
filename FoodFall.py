@@ -18,11 +18,28 @@ def dropSushi(x,speed):
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 quit()
+            if event.type == pygame.KEYDOWN:
+                if event.key == pygame.K_LEFT:
+                    #x1_change = -10
+                    #y1_change = 0
+                    print(" left")
+                elif event.key == pygame.K_RIGHT:
+                    #x1_change = 10
+                    #y1_change = 0
+                    print("right")
+            if event.type == pygame.KEYUP:
+                if event.key == pygame.K_LEFT:
+                    x1_change = 0
+                    y1_change = 0
+                elif event.key == pygame.K_RIGHT:
+                    x1_change = 0
+                    y1_change = 0
 
         win.blit(sushi1Img, (x,y))
         pygame.display.update()
         pygame.draw.rect(win, (0,0,0), (x, y , width, height))
         y+= speed
+        
 
 def main():
     x1 = 300
@@ -33,10 +50,8 @@ def main():
     
     clock = pygame.time.Clock()
         
-    count = 0
-    speed = 3
-    
-    
+wd    speed = 3
+a    
     run = True
     while run:
         surf = pygame.Surface((550,550))
