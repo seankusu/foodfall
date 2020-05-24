@@ -7,7 +7,7 @@ pygame.display.set_caption("Food Fall")
 
 count = 0
 speed = .2
-
+#this is mias change
 sushi1Img = pygame.image.load('sushi1.png')
 
 
