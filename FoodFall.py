@@ -6,21 +6,23 @@ win = pygame.display.set_mode((500,500))
 pygame.display.set_caption("Food Fall")
 
 #this is mias change
-#sushi1Img = pygame.image.load('sushi1.png')
 
 
-def Sushi(x,y):
-    gameDisplay.blit(sushi1Img, (x,y))
 
-def dropSushi(x,speed, count):
+def dropSushi(x,speed):
     width = 40
     height = 60
+    sushi1Img = pygame.image.load('sushi1.png')
+    sushi1Img = pygame.transform.scale(sushi1Img, (width, height))
+    
     y = 0
     while y <= 440:
-        pygame.draw.rect(win, (color1, color2, color3), (x, y , width, height))
+        win.blit(sushi1Img, (x,y))
         pygame.display.update()
         pygame.draw.rect(win, (0,0,0), (x, y , width, height))
-        y+=speed
+        y+= speed
+        
+     
  
 def dropFood(x,speed,color1, color2, color3):
     width = 40
@@ -47,8 +49,9 @@ def main():
         for event in pygame.event.get() :
             if event.type == pygame.QUIT:
                 run = False
-                
-        dropFood(x, speed, color1, color2, color3)
+       
+        dropSushi(x, speed)
+        #dropFood(x + 40, speed, color1, color2, color3)
         count += 1
         if count == 10:
             speed += .1
