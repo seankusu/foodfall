@@ -5,7 +5,7 @@ Food Fall Open Hack
 The main project code is "foodFall.py"
 
 Description:
-    The goal of this game is to use a mouth and catch as many sushi pices
+    The goal of this game is to use a mouth and catch as many sushi pieces
 
 Member IDs:
 - miakusu
