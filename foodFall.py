@@ -15,6 +15,10 @@ def dropSushi(x,speed):
     
     y = 0
     while y <= 440:
+        for event in pygame.event.get():
+            if event.type == pygame.QUIT:
+                quit()
+
         win.blit(sushi1Img, (x,y))
         pygame.display.update()
         pygame.draw.rect(win, (0,0,0), (x, y , width, height))
@@ -30,7 +34,8 @@ def main():
     clock = pygame.time.Clock()
         
     count = 0
-    speed = .2
+    speed = 3
+    
     
     run = True
     while run:
