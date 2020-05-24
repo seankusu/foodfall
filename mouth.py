@@ -41,7 +41,7 @@ def main():
         
         center = (x1,y1)
         radius = 40
-        pygame.draw.circle(surf, (255,0,0), center, radius)
+        pygame.draw.circle(surf, (0,0,255), center, radius)
         win.blit(surf, (-50,190))
         pygame.display.update()
         
