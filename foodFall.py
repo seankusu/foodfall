@@ -50,8 +50,8 @@ def main():
     
     clock = pygame.time.Clock()
         
-wd    speed = 3
-a    
+    speed = 3
+
     run = True
     while run:
         surf = pygame.Surface((550,550))
@@ -94,9 +94,6 @@ a
         
         dropSushi(x, speed)
         #dropFood(x + 40, speed, color1, color2, color3)
-        count += 1
-        if count == 10:
-            speed += .1
 
     pygame.quit()
     quit()
